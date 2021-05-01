@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(249, 249, 249);
+    /* overflow: hidden; */
+    padding: 4rem 12rem;
+}
+
+h1, h2, h3, h4, h5, h6 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 3px #d8d8d8;
+}
+
+article section {
+    flex: 1;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    
+}
+article section .esquerda{
+    padding: 2rem;
+}
+
+.esquerda {
+    background: #333;
+    padding-top: 1rem;
+}
+
+.esquerda h1 {
+    font-size: 2rem;
+    color:#fff;
+    font-weight: 100;
+}
+
+.esquerda .resumo {
+    color: #d8d8d8;
+    padding: 2rem;
+}
+
+.imagem {
+    height: 15rem;
+    width: 15rem;
+}
+
+.imagem img {
+    object-fit: fill;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.esquerda h2 {
+    font-size: 1rem;
+    font-style: italic;
+    color: #d8d8d8;
+}
+
+.direita {
+    background: #f1f0f0;
+      
+}
+.direita .educacao {
+    background-color: rgb(219, 219, 219);
+    align-self: stretch;
+    padding: 1rem;
+    
+}
+.direita .educacao h1 {
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: #333;
+}
+
+.direita .educacao h4{
+    color: #333;
+}
+.direita .educacao p{
+    color: #818181;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+
+.direita .work{
+    padding: 0 2rem;
+    align-self: stretch;
+}
+.direita .work h1{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: #333;
+    letter-spacing: 4px;
+}
+
+.direita .work h4{
+    padding-top: 1rem;
+    color: #333;
+}
+.direita .work h5{
+    font-style: italic;
+    color: #B0B4BF;
+    padding: 0 0 2% 0;
+}
+.direita .work p{
+    padding-left: 1%;
+    color: #333;
+}   
+
+.qualificacao h1{
+    padding-bottom: 1rem;
+}
+
+.contain{
+    
+    display: flex;
+    align-items: center;
+}
+.contain h3{
+    padding-left: 3rem;
+    color: #333;
+}
+
+.perfil {
+    padding: 1rem;
+    align-self: stretch;
+}
+.perfil h1{
+    padding-top: 4%;
+}
+.perfil i{
+    font-size: 1.5rem;
+    color: white;
+}
+.work i{
+    padding-top: 3%;
+    font-size: 1rem;
+}
+
+.perfil .skills {
+    display: flex;
+    align-items: center;
+}
+.perfil .skills div{
+    background: white;
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.direita .work .bullet{
+    margin-left: 7%;
+    background: #333;
+    height: 5px;
+    width: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.perfil .skills p{
+    padding-left: 2rem;
+    color: #d8d8d8;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    body{
+        padding: 1rem;
+    }
+    article{
+        flex-direction: column;
+    }
+ }
